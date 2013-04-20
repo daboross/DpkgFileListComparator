@@ -56,11 +56,12 @@ public class FileComp {
                 }
             }
         }
-        if ("".equals(addList.get(addList.size() - 1))) {
+        if (!addList.isEmpty() && "".equals(addList.get(addList.size() - 1))) {
             addList.remove(addList.size() - 1);
         }
-        if ("".equals(removeList.get(removeList.size() - 1))) {
-            addList.remove(removeList.size() - 1);
+
+        if (!removeList.isEmpty() && "".equals(removeList.get(removeList.size() - 1))) {
+            removeList.remove(removeList.size() - 1);
         }
         for (String str : addList) {
             System.out.println(str);
