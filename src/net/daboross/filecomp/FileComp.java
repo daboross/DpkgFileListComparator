@@ -26,8 +26,8 @@ public class FileComp {
         File file2 = new File(args[1]);
         List<String> file1List = FileHandler.ReadFile(file1);
         List<String> file2List = FileHandler.ReadFile(file2);
-        List<String> removeList = new ArrayList<>();
-        List<String> addList = new ArrayList<>();
+        List<String> removeList = new ArrayList<String>();
+        List<String> addList = new ArrayList<String>();
         for (String str : file2List) {
             if (!file1List.contains(str)) {
                 if (str.contains("deinstall")) {
