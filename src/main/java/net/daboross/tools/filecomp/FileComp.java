@@ -1,4 +1,4 @@
-package net.daboross.filecomp;
+package net.daboross.tools.filecomp;
 
 import java.io.File;
 import java.util.ArrayList;

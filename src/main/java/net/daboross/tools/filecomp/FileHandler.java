@@ -1,4 +1,4 @@
-package net.daboross.filecomp;
+package net.daboross.tools.filecomp;
 
 import java.util.List;
 import java.io.BufferedReader;
